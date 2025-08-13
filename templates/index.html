@@ -1,0 +1,33 @@
+<!DOCTYPE html> 
+<html>
+<head>
+    <title>Smart AI Chatbot</title>
+    <!-- Include Bootstrap CSS for style -->
+     <meta name="viewport" content="width=device-width, initial-scale=1">
+     <link rel="stylesheet" href="{{url_for('static', filename='style.css') }}">
+
+</head>
+<body>
+    <div class="container">
+        <h1>Smart AI Chatbot</h1>
+        <div class="message">
+            <div class="message">😊 Smile! You're here to chat with my Smart AI.</div>
+            <div class="message">💡 Tip: Ask me anything!</div>
+            <div class="message">☀️ Weather: Sunny, 25°C</div>
+            <div class="message">🎬 Movie: Inception</div>
+            <!--Show Current time -->
+            <div class="timestamp">
+                <span id="current-timestamp"></span>
+            </div>
+
+        </div>
+        <div id="chat"></div>
+        <form id="chat-form">
+            <input type="text" id="user-input" autocomplete="off" placeholder="Type your message..." required>
+            <button type="submit">Send</button>
+        </form>
+    </div>
+    <!--Include javascript file-->
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>
