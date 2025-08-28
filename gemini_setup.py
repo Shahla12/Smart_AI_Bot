@@ -36,7 +36,7 @@ def get_gemini_response(user_message):
         # Make the prompt force Gemini to be short and simple
         prompt = f"Reply in one or two short, simple sentences: {user_message}"
 
-        model = genai.GenerativeModel("gemini-2.5-pro")
+        model = genai.GenerativeModel("gemini-1.5-flash")
         response = model.generate_content(prompt)
 
         if hasattr(response, "text") and response.text:
