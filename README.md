@@ -6,7 +6,7 @@ Programming Language: Python (Backend), JavaScript (Frontend)
 
 Framework: Flask (Python Web Framework)
 
-AI Model: Google Gemini 2.5 Pro API for Generative AI
+AI Model: Google Gemini 1.5 flash API for Generative AI
 
 Frontend: HTML5, CSS3, JavaScript (with Fetch API)
 
